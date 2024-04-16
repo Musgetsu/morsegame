@@ -66,7 +66,8 @@ function sleep(ms) {
         result.style="font-size:33px;";
         document.getElementById("text").appendChild(result);
         }
-if(textfield.value.replaceAll('█','')=="azerty")
+        let tmp = textfield.value.toLowerCase();
+if(tmp.replaceAll('█','')=="azerty")
 {
     document.getElementById('result').innerText="clé de déchiffrement trouvé !";
 }
